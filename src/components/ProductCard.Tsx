@@ -23,7 +23,7 @@ export function ProductCard({
   sold
 }: ProductCardProps) {
   return (
-    <div className="w-full max-w-md border border-gray-200 rounded-lg overflow-hidden shadow-sm mt-3">
+    <div className="w-full max-w-md border-2 border-[#1B1F22] rounded-lg overflow-hidden shadow-sm mt-3">
       {/* Black Header */}
       <div className="bg-black text-white py-3 px-3 text-sm">
         Time is running out, don't miss the opportunity.
@@ -37,8 +37,7 @@ export function ProductCard({
             <Image
               src={image}
               alt={title}
-              width={200}
-              height={200}
+              fill
               objectFit="cover"
               className="rounded"
             />

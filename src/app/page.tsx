@@ -3,6 +3,7 @@ import FeatureCard from "@/components/FeatureCard";
 import DiscountBanner from "@/components/DiscountBanner";
 
 import ProductGrid from "@/components/ProductGrid";
+import BannerCardSection from "@/components/BannerCardSection";
 const products = [
   {
     id: "1",
@@ -34,6 +35,7 @@ const page = () => {
       <FeatureCard title="Featured Products"/>
       <DiscountBanner/>
       <ProductGrid products={products}/>
+      <BannerCardSection/>
     </div>
   );
 };

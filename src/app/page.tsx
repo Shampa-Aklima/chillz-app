@@ -6,18 +6,26 @@ import ProductGrid from "@/components/ProductGrid";
 const products = [
   {
     id: "1",
-    title: "Product 1",
-    price: "100",
+    title: "Great Value Peanut Dark Chocolate Protein",
+    price: "$4.00",
+    discount: "$2.75",
+    weight:"1kg",
     image: "/promo1.png",
+    available: "44",
+    sold: "12",
     
   },
   {
     id: "2",
-    title: "Product 2",
-    price: "100",
+    title: "Fresh Green Giant Veggie Spirals Zucchini",
+    price: "$5.30",
+    discount: "$4.25",
+    weight:"1kg",
     image: "/promo2.png",
-    
-  }
+    available: "44",
+    sold: "12",
+  },
+
 ];
 const page = () => {
   return (

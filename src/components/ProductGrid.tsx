@@ -5,7 +5,11 @@ type Product = {
   id: string;
   title: string;
   price: string;
+  discount: string;
+  weight: string;
   image: string;
+  available: string;
+  sold: string;
 };
 
 type ProductCardGridProps = {
@@ -22,8 +26,11 @@ function ProductCardGrid({ products }: ProductCardGridProps) {
           key={product.id}
           title={product.title}
           price={product.price}
+          discount={product.discount}
+          weight={product.weight}
           image={product.image}
-                    showActionButton={true}
+          available={product.available}
+          sold={product.sold}
         />
       ))}
     </div>

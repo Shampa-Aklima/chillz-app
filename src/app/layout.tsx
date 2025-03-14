@@ -1,7 +1,7 @@
 import type React from "react"
 import { Inter, Dosis,Jersey_25  } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/components/Navbar";
 
 
 

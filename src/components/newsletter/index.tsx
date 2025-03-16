@@ -1,3 +1,5 @@
+"use client"
+
 export function Newsletter() {
     return (
       <section className="py-12 bg-white">

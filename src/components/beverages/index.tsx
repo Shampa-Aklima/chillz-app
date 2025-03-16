@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { ProductCard } from "../shared/product-card"
 import { SectionHeader } from "../shared/section-header"
@@ -7,12 +9,7 @@ export function Beverages() {
   return (
     <section className="py-6">
       <div className="container mx-auto px-4">
-        <SectionHeader 
-          title="Beverages"
-          categories={["All", "Alcoholic", "Non-Alcoholic", "Water", "Soft Drinks"]}
-          activeCategory="All"
-          onCategoryChange={(category) => console.log(category)}
-        />
+        <SectionHeader title="Beverages" viewAllLink="/beverages" />
 
         <div className="grid grid-cols-5 gap-4">
           <ProductCard

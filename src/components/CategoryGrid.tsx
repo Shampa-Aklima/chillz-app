@@ -1,10 +1,12 @@
-"use client"
-
 import Image from "next/image"
 import Link from "next/link"
-import { categories } from "./data"
+import type { Category } from "@/types"
 
-export function Categories() {
+interface CategoryGridProps {
+  categories: Category[]
+}
+
+export function CategoryGrid({ categories }: CategoryGridProps) {
   return (
     <section className="py-6">
       <div className="container mx-auto px-4">
@@ -18,7 +20,7 @@ export function Categories() {
               <div className="flex items-center">
                 <div className="w-1/3">
                   <Image
-                    src={category.image || "/placeholder.svg?height=120&width=120"}
+                    src={category.image || "/placeholder.svg"}
                     alt={category.title}
                     width={120}
                     height={120}
